@@ -36,11 +36,11 @@ body{
 /* header  */
 header{
     top: 0;
-    background-color: #000;
+    background-color: #333333;
     position: sticky;
     left: 0;
     right: 0;
-    border-bottom: 1px solid #423940;
+    /* border-bottom: 1px solid #423940; */
     padding: 0px 15px;
     z-index: 5;
 }
@@ -103,10 +103,11 @@ header .fixed ,.navbar ul li a{
 }
 
 
+
 /* home */
 .home{
-    background-image: url("./images/home.jpg");
-    color: #000;
+    background-image: url("./images/homeGIF.gif");
+    color: #fff;
     margin: 0;
     width: 100%;
     bottom: 0;
@@ -122,7 +123,7 @@ header .fixed ,.navbar ul li a{
 }
 .block h1{
     margin: 4% 50px 10px;
-    font-size: 65px;
+    font-size: 55px;
 }
 .block h3{
     margin: 0px 50px 40px;
@@ -161,8 +162,9 @@ header .fixed ,.navbar ul li a{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    border: 2px solid grey;
-    padding: 2px;
+    border: 8px solid #E8E8E8;
+    padding: 10px;
+    
 
 }
 .social-icons, .social-list{
@@ -181,7 +183,7 @@ header .fixed ,.navbar ul li a{
 .social-list .list-item a{
     margin: 15px 10px 0px;
     font-size: 30px;
-    color: #000;
+    color: #fff;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -220,7 +222,7 @@ header .fixed ,.navbar ul li a{
 .smoothscroll{
     position: absolute;
     bottom: 10px;
-    top: 91vh;
+    /* top: 91vh; */
     left: 50%;
     margin-left: -29px;
     display: block;
@@ -229,7 +231,7 @@ header .fixed ,.navbar ul li a{
     font-size: 42px;
     line-height: 42px;
     border-radius: 100%;
-    color: black;
+    color: #fff;
 }
 .bottom-row {
     padding-top: 40px;
@@ -452,7 +454,7 @@ header .fixed ,.navbar ul li a{
 
 /* contact section */
 .upper-section{
-    background-color: #111111;
+    background-color: #222222;
     color: #f5f5f5;
     padding-left: 50px;
     padding-bottom: 100px;
@@ -489,7 +491,10 @@ header .fixed ,.navbar ul li a{
 }
 .lower-section .social-icons .footer-social .list-item{
     background-color: white;
-
+}
+.lower-section .social-icons .footer-social .list-item a{
+    color: #e95325;
+    
 }
 .lower-section .social-icons .footer-social .list-item:hover{
     transform: scale(1.2);
@@ -525,7 +530,7 @@ label #btn, label #cancel{
 }
 @media only screen and (max-width: 1300px){
     .avatar img{
-        margin: 27% 2%;
+        margin: 15% 2%;
         width: 420px ;
         height: 420px ;
     
@@ -592,15 +597,13 @@ label #btn, label #cancel{
         width: 45%;
     }
 }
-
-@media only screen and (max-width: 800px){
-    
+@media only screen and (max-width: 940px){
     header {
         padding: 15px;
         position: fixed;
-        background-color: #000;
+        /* background-color: #000; */
         border: none;
-        border-bottom: 1px solid #eeeeee;
+        /* border-bottom: 1px solid #eeeeee; */
     }
     header .name a{
         color: #fff;
@@ -632,7 +635,55 @@ label #btn, label #cancel{
     #check:checked ~ .navbar ul{
         left: 0;
     }
-  
+    .smoothscroll {
+        bottom: 15%;
+    }
+    .home-content .block h1{
+        margin-top: 15%;
+    }
+}
+@media only screen and (max-width: 800px){
+   
+    header {
+        padding: 15px;
+        position: fixed;
+        /* background-color: #000; */
+        border: none;
+        /* border-bottom: 1px solid #eeeeee; */
+    }
+    header .name a{
+        color: #fff;
+    }
+    .row label #btn{
+        display: block;
+
+    }
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        /* background-color: #eeeeee; */
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a{
+        color: #000;
+
+    }
+   
+    #check:checked ~ .navbar ul{
+        left: 0;
+    }
+    .show{
+        left: 0;
+    }
     .smoothscroll {
         bottom: 5px;
     }
@@ -645,7 +696,7 @@ label #btn, label #cancel{
    
     .home{
         margin-top: 70px;
-        height: 100vh;
+        height: 90vh;
     }
     .home-content{
         width: 100%;
@@ -657,7 +708,7 @@ label #btn, label #cancel{
         width: 100%;
     }
     .home-content .block h1{
-        margin: 30px auto 10px;
+        margin: 28px auto 12px;
         font-size: 40px;
         width: 100%;
     }
@@ -667,39 +718,19 @@ label #btn, label #cancel{
         font-size: 20px;
     }
     .home-content .block p{
-        width: 95%;
+        width: 80%;
         text-align: center;
-        color: #000;
         font-weight: 500;
-        margin: 0px 0 10px;
+        margin: 0px auto 10px;
         font-size: 18px;
     }
-/* 
-    .social-list .list-item {
-        width: 70px;
-        height: 70px;
-        margin: 15px;
-        border: 1px solid grey;
-        border-radius: 50%;
-    }
+
+    
     .social-icons, .social-list {
         width: 100%;
-        margin: 10px 20px 0px;
+        padding: 10px 15% 10px;
     }
-    .social-list .list-item a {
-        margin: 15px 10px 0px;
-        font-size: 30px;
-       
-    }
-     */
-    /* .social-list .list-item {
-        width: 50px;
-        height: 50px;
-    }
-    .social-list .list-item a {
-        margin: 15px 10px 0px;
-        font-size: 30px;
-    } */
+   
     .resume-btn {
         margin: 0px;
     }
