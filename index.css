@@ -718,7 +718,7 @@ label #btn, label #cancel{
         font-size: 20px;
     }
     .home-content .block p{
-        width: 80%;
+        width: 95%;
         text-align: center;
         font-weight: 500;
         margin: 0px auto 10px;
@@ -728,7 +728,7 @@ label #btn, label #cancel{
     
     .social-icons, .social-list {
         width: 100%;
-        padding: 10px 15% 10px;
+        padding: 10px 10% 0px;
     }
    
     .resume-btn {
