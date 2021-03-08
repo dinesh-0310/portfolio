@@ -154,6 +154,7 @@ header .fixed ,.navbar ul li a{
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid grey;
+    
 }
 .block .resume-btn:hover{
     color: white;
