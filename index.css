@@ -18,24 +18,26 @@ body{
     font-family: 'poppins', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-   
+   width: 100%;
 }
 *{
     box-sizing: border-box;
     margin: 0;
 }
 
-.container{
+/* .container{
     max-width: 100%;
     margin: auto;
-}
-.row{
+} */
+/* .row{
     display: flex;
     flex-wrap: wrap;
-}
+} */
 /* header  */
 header{
+    max-width: 100%;
     top: 0;
+    /* background-image: url("./images/homeGIF.gif"); */
     background-color: #333333;
     position: sticky;
     left: 0;
@@ -45,6 +47,8 @@ header{
     z-index: 5;
 }
 header .row{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -76,16 +80,16 @@ header .name a::before{
     margin: 0;
 
 }
-.navbar ul li{
+.nav_list{
     display: inline-block;
     margin-left: 50px;
-
+    color: #fff;
 }
 .navbar ul li a{
     font-size: 15px;
     text-decoration: none;
-    line-height: 75px;
-    color: #fff;
+    line-height: 70px;
+    /* color: #fff; */
     display: block;
     font-weight: 600;
     position: relative;
@@ -101,7 +105,12 @@ header .fixed ,.navbar ul li a{
     color: #e95325;
     left: 0;
 }
-
+.active{
+    /* background-color: #e95325 ;
+    padding: 10px 10px;
+    height: 5px; */
+    border-bottom: 4px solid #e95325;
+}
 
 
 /* home */
@@ -525,9 +534,7 @@ label #btn, label #cancel{
     cursor: pointer;
     display: none;
 }
-#check{
-    display: none;
-}
+
 @media only screen and (max-width: 1300px){
     .avatar img{
         margin: 15% 2%;
@@ -612,12 +619,12 @@ label #btn, label #cancel{
         display: block;
 
     }
-    .navbar ul{
+    .nav_content{
         position: fixed;
         width: 100%;
         height: 100vh;
         background-color: #eeeeee;
-        top: 70px;
+        top: 68px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -632,7 +639,11 @@ label #btn, label #cancel{
 
     }
    
-    #check:checked ~ .navbar ul{
+    .active{
+    
+        border: 2px solid #e95325;
+    }
+    .show{
         left: 0;
     }
     .smoothscroll {
@@ -658,12 +669,12 @@ label #btn, label #cancel{
         display: block;
 
     }
-    .navbar ul{
+    .nav_content{
         position: fixed;
         width: 100%;
         height: 100vh;
-        /* background-color: #eeeeee; */
-        top: 70px;
+        background-color: #eeeeee;
+        top: 68px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -678,9 +689,6 @@ label #btn, label #cancel{
 
     }
    
-    #check:checked ~ .navbar ul{
-        left: 0;
-    }
     .show{
         left: 0;
     }
@@ -748,7 +756,19 @@ label #btn, label #cancel{
     .lower-section .social-icons, .social-list {
         margin: 10px 0px 0px;
     }
-    .upper-section {
-        padding-left: 30px;
+  
+    /* .upper-section h1{
+        padding-top: 100px;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .upper-section h3{
+        padding: 20px 0px;
+        font-size: 25px;
+        letter-spacing: 2px;
+    } */
+    .upper-section .phoneno, .upper-section .footer-email{
+        font-size: 16px;
+        padding: 20px 0px;
     }
 }
